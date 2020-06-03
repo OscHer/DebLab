@@ -26,10 +26,15 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
 
 # Instrucciones de instalación
  
+ 1. Descargar el Vagrantfile al directorio de trabajo: `$ wget`
+ 2. Creamos el directorio donde meteremos el código fuente inicial de nuestro proyecto: `$ mkdir develop`.
+ 
+ El nombre del directorio no es opcional a menos que cambiemos la ruta en el Vagrantfile (Ver sección de aprovisionamiento) y **NO SE SINCRONIZA** con el sistema de archivos del anfitrión.
+
+ 3. Descargamos el box y levantamos la máquina virtual
+ 
  ```
-    wget
-    vagrant up
-    vagrant ssh
+    $ vagrant up && vagrant ssh
  ```
 
 ## TODO: 
