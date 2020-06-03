@@ -4,6 +4,18 @@ Laboratorio portatil de desarrollo basado en Debian GNU/Linux.
 
 ## Objetivos
 El objetivo de este proyecto es tener un laboratorio configurable para distintas tareas de desarrollo y administración de sistema controlado por Vagrant.
+## Instrucciones de instalación
+ 
+ 1. Descargar el Vagrantfile al directorio de trabajo: `$ wget`https://github.com/OscHer/DebLab/blob/master/Vagrantfile
+ 2. Creamos el directorio donde meteremos el código fuente inicial de nuestro proyecto: `$ mkdir develop`.
+ 
+ El nombre del directorio no es opcional a menos que cambiemos la ruta en el Vagrantfile (Ver sección de aprovisionamiento) y **NO SE SINCRONIZA** con el sistema de archivos del anfitrión.
+
+ 3. Descargamos el box y levantamos la máquina virtual
+ 
+ ```
+    $ vagrant up && vagrant ssh
+ ```
 
 ## Especificaciones técnicas
 ### Imagen base
@@ -29,18 +41,6 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
 * Programación en PythoN
 * Programación en C/C++
 
-## Instrucciones de instalación
- 
- 1. Descargar el Vagrantfile al directorio de trabajo: `$ wget`https://github.com/OscHer/DebLab/blob/master/Vagrantfile
- 2. Creamos el directorio donde meteremos el código fuente inicial de nuestro proyecto: `$ mkdir develop`.
- 
- El nombre del directorio no es opcional a menos que cambiemos la ruta en el Vagrantfile (Ver sección de aprovisionamiento) y **NO SE SINCRONIZA** con el sistema de archivos del anfitrión.
-
- 3. Descargamos el box y levantamos la máquina virtual
- 
- ```
-    $ vagrant up && vagrant ssh
- ```
 
 ## Más Info
 * <https://www.vagrantup.com/>
