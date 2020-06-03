@@ -26,7 +26,7 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
 
 # Instrucciones de instalación
  
- 1. Descargar el Vagrantfile al directorio de trabajo: `$ wget`
+ 1. Descargar el Vagrantfile al directorio de trabajo: `$ wget`https://github.com/OscHer/DebLab/blob/master/Vagrantfile
  2. Creamos el directorio donde meteremos el código fuente inicial de nuestro proyecto: `$ mkdir develop`.
  
  El nombre del directorio no es opcional a menos que cambiemos la ruta en el Vagrantfile (Ver sección de aprovisionamiento) y **NO SE SINCRONIZA** con el sistema de archivos del anfitrión.
