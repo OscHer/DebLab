@@ -10,7 +10,7 @@ El objetivo de este proyecto es tener un laboratorio configurable para distintas
 La imagen base para la versión v0.1 será Debian Testing (Bullseye en el momento de la creación de este proyecto) con los repositorios contrib oficiales añadidos.
 <https://app.vagrantup.com/debian/boxes/contrib-testing64>
 ### Hipervisor
-Virtualbox 6.1
+Virtualbox 6.1 o superior
 
 * https://es.wikipedia.org/wiki/Hipervisor#Hipervisor_tipo_2
 * https://es.wikipedia.org/wiki/VirtualBox
@@ -24,7 +24,7 @@ Password: vagrant
 El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile.
 
 
-# Instrucciones de instalación
+## Instrucciones de instalación
  
  1. Descargar el Vagrantfile al directorio de trabajo: `$ wget`https://github.com/OscHer/DebLab/blob/master/Vagrantfile
  2. Creamos el directorio donde meteremos el código fuente inicial de nuestro proyecto: `$ mkdir develop`.
@@ -36,6 +36,10 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
  ```
     $ vagrant up && vagrant ssh
  ```
+
+## Más Info
+* <https://www.vagrantup.com/>
+
 
 ## TODO: 
  - Personalizar las opciones de aprovisionamiento.
