@@ -3,6 +3,8 @@
 Vagrant.configure("2") do |config|
   # Elegimos la imagen base
   config.vm.box = "debian/contrib-buster64"
+  
+  config.vm.hostname = "deblab"
 
   # Aprovisionamiento
   # Aprovisionamos con nuestro directorio de desarrollo. 

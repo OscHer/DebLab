@@ -42,9 +42,9 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
 * Programación en C/C++
 
 
-## Más Info
-* <https://www.vagrantup.com/>
-
+## Enlaces relacionados 
+* <https://www.vagrantup.com>
+* <http://www.debian.org>
 
 ## TODO: 
  - Personalizar las opciones de aprovisionamiento.
