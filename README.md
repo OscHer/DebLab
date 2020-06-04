@@ -38,7 +38,7 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
 #### Paquetes
 * Contenerización
 * LAMP
-* Programación en PythoN
+* Programación en Python
 * Programación en C/C++
 
 
