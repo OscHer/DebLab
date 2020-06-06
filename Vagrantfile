@@ -13,5 +13,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "Aprovisionando directorio de desarrollo", type: "file", source: "./develop", destination: "develop"  
 
   # Aprovisionamiento mediante shell script
-  config.vm.provision "Instalando metapaquetes", type: "shell", path: "provision_scripts/shell_provision.sh"
+  config.vm.provision "Configurando variables de aprovisionamiento", type: "shell", path: "provision_scripts/provision_config.sh", upload_path: "/tmp/provision_config.sh" # Subimos fichero de variables
+  config.vm.provision "Instalando metapaquetes", type: "shell", path: "provision_scripts/shell_provision.sh", upload_path: "/tmp/shell_provision.sh" # Aprovisionamos
 end
