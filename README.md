@@ -1,6 +1,6 @@
 # Deblab
 
-Laboratorio portatil de desarrollo basado en Debian GNU/Linux.
+Laboratorio portátil de desarrollo basado en Debian GNU/Linux.
 
 ## Objetivos
 El objetivo de este proyecto es tener un laboratorio configurable para distintas tareas de desarrollo y administración de sistema controlado por Vagrant.
@@ -11,6 +11,7 @@ El objetivo de este proyecto es tener un laboratorio configurable para distintas
  2. Creamos el directorio donde meteremos el código fuente inicial de nuestro proyecto: `$ mkdir develop`.
 
  El nombre del directorio no es opcional a menos que cambiemos la ruta en el Vagrantfile (Ver sección de aprovisionamiento) y se sincroniza bidireccionalmente.
+ No se sincroniza el directorio del proyecto con el directorio /vagrant del invitado.
 
  3. Descargamos el box y levantamos la máquina virtual
 
