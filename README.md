@@ -32,6 +32,9 @@ Virtualbox 6.1 o superior
 Usuario: vagrant
 Password: vagrant
 
+#### Red
+Reenvío del puerto 2222 del invitado al 22 del anfitrión
+
 ### Aprovisionamiento
 El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile.
 
