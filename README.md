@@ -55,6 +55,10 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
   * php-mysql
   * php-xml
 * Programación en Python (METAPAQUETE_PYTHON)
+  * python3
+  * python3-dev
+  * python3-pip
+  * virtualenv
 * Programación en C/C++ (METAPAQUETE_C)
   * linux-headers
 
