@@ -44,6 +44,9 @@ Reenvío del puerto 2222 del invitado al 22 del anfitrión
 El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile.
 
 #### Metapaquetes
+* BASE (METAPAQUETE_BASE)
+  * Git
+  * Vim
 * Contenerización (METAPAQUETE_DOCKER)
 * LAMP (METAPAQUETE_LAMP)
   * apache2
