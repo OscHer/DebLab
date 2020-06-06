@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
   config.vbguest.auto_update = false # Desactivamos temporalmente la actualización de las Guest Additions
   config.vm.hostname = "deblab"
   config.vm.provider "virtualbox"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 
   # Aprovisionamiento
   # Aprovisionamos con nuestro directorio de desarrollo. 
