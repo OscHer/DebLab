@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
 
   # Aprovisionamiento
   # Aprovisionamos con nuestro directorio de desarrollo. 
-  config.vm.provision "Aprovisionando directorio de desarrollo", type: "file", source: "./develop", destination: "develop"  
+  config.vm.synced_folder "develop/", "/home/vagrant/develop" # Sincronizamos el directorio del código fuente entre anfitrión  e invitado
 
   # Aprovisionamiento mediante shell script
   config.vm.provision "Configurando variables de aprovisionamiento", type: "shell", path: "provision_scripts/config.sh", upload_path: "/tmp/config.sh" # Subimos fichero de variables
