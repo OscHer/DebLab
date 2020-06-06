@@ -39,13 +39,14 @@ Reenvío del puerto 2222 del invitado al 22 del anfitrión
 El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile.
 
 #### Metapaquetes
-* Contenerización
-* LAMP
+* Contenerización (METAPAQUETE_DOCKER)
+* LAMP (METAPAQUETE_LAMP)
   * apache2
   * curl
   * lynx
-* Programación en Python
-* Programación en C/C++
+* Programación en Python (METAPAQUETE_PYTHON)
+* Programación en C/C++ (METAPAQUETE_C)
+  * linux-headers
 
 
 ## Enlaces relacionados
