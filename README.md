@@ -6,6 +6,9 @@ Laboratorio portátil de desarrollo basado en Debian GNU/Linux.
 El objetivo de este proyecto es tener un laboratorio configurable para distintas tareas de desarrollo y administración de sistema controlado por Vagrant.
 
 ## Instrucciones de instalación
+### Dependencias
+* Virtualbox >= 6.1
+* Vagrant >= 2.2.9
 
  1. Descargar el Vagrantfile al directorio de trabajo: `$ wget`https://github.com/OscHer/DebLab/blob/master/Vagrantfile
  2. Creamos el directorio donde meteremos el código fuente inicial de nuestro proyecto: `$ mkdir develop`.
@@ -31,8 +34,8 @@ Virtualbox 6.1 o superior
 * https://www.virtualbox.org/
 
 ### Valores por defecto
-Usuario: vagrant
-Password: vagrant
+* Usuario: vagrant
+* Password: vagrant
 
 #### Red
 Reenvío del puerto 2222 del invitado al 22 del anfitrión
