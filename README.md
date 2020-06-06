@@ -43,7 +43,15 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
 * LAMP (METAPAQUETE_LAMP)
   * apache2
   * curl
+  * libapache2-mod-php
   * lynx
+  * mariadb-server
+  * mariadb-common
+  * php
+  * php-cli
+  * php-gd
+  * php-mysql
+  * php-xml
 * Programación en Python (METAPAQUETE_PYTHON)
 * Programación en C/C++ (METAPAQUETE_C)
   * linux-headers
