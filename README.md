@@ -10,7 +10,7 @@ El objetivo de este proyecto es tener un laboratorio configurable para distintas
 * Virtualbox >= 6.1
 * Vagrant >= 2.2.9
 
- 1. Descargar el Vagrantfile al directorio de trabajo: `$ wget`https://github.com/OscHer/DebLab/blob/master/Vagrantfile
+ 1. Descargar el Vagrantfile al directorio de trabajo: `$ wget https://github.com/OscHer/DebLab/blob/master/Vagrantfile`
  2. Creamos el directorio donde meteremos el código fuente inicial de nuestro proyecto: `$ mkdir develop`.
 
  El nombre del directorio no es opcional a menos que cambiemos la ruta en el Vagrantfile (Ver sección de aprovisionamiento) y se sincroniza bidireccionalmente.
