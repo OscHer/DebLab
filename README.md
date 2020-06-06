@@ -57,3 +57,4 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
  - Considerar la opción de aprovsionar el servidor mediante Ansible.
  - Añadir pre-requisitos y enlaces a instrucciones de instalación de Vagrant y Virtualbox
  - Añadir auto git pull en las variables de inicialización del laboratorio: El usuario podrá añadir su github y que durante el aprovisionamiento se descargue y sincronice su repositorio.
+ - Exportación de puertos mediante port forwarding del invitado al anfitrión.
