@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CONFIG_FILE='/tmp/provision_config.sh'
+CONFIG_FILE='/tmp/config.sh'
 
 # Incluimos variables de configuracion
 [[ ! -f $CONFIG_FILE ]] && echo "Fichero de configuración NO encontrado. Abortando."
