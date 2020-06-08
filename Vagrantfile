@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "deblab"
   config.vm.provider "virtualbox"
   config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # Aprovisionamiento
   # Aprovisionamos con nuestro directorio de desarrollo. 
