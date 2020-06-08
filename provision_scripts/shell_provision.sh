@@ -13,11 +13,6 @@ function install_base
   apt-get -y install $1
 }
 
-function install_lamp
-{
-  echo "Instalando metapaquete LAMP: $1"
-  apt-get -y install $1
-}
 
 function install_c
 {
@@ -28,6 +23,13 @@ function install_c
 function install_docker
 {
   echo "Instalando metapaquete docker"
+  
+}
+
+function install_lamp
+{
+  echo "Instalando metapaquete LAMP: $1"
+  apt-get -y install $1
 }
 
 function install_python
@@ -42,6 +44,7 @@ echo "Actualizando lista de paquetes"
 apt-get update
 
 [[ METAPAQUETE_BASE -eq 1 ]] && install_base "$CADENA_METAPAQUETE_BASE"
-[[ METAPAQUETE_C -eq 1 ]] && install_lamp "$CADENA_METAPAQUETE_C"
+[[ METAPAQUETE_C -eq 1 ]] && install_c "$CADENA_METAPAQUETE_C"
+[[ METAPAQUETE_PYTHON -eq 1 ]] && install_docker "$CADENA_METAPAQUETE_PYTHON"
 [[ METAPAQUETE_LAMP -eq 1 ]] && install_lamp "$CADENA_METAPAQUETE_LAMP"
-[[ METAPAQUETE_PYTHON -eq 1 ]] && install_lamp "$CADENA_METAPAQUETE_PYTHON"
+[[ METAPAQUETE_PYTHON -eq 1 ]] && install_python "$CADENA_METAPAQUETE_PYTHON"
