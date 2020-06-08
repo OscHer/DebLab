@@ -23,10 +23,14 @@ function install_c
 function install_docker
 {
   echo "Instalando metapaquete docker"
-  # Instalamos la versión edge mediante script de docker
+  # Instalamos la versión stablee mediante script de docker
   curl -fsSL https://get.docker.com -o get-docker.sh
   sh get-docker.sh
   usermod -aG docker vagrant
+
+  # Latest stable release of docker compose
+  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  sudo chmod +x /usr/local/bin/docker-compose
 }
 
 function install_lamp
