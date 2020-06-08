@@ -49,6 +49,7 @@ El aprovisionamiento se ejecuta mediante inline script definido en el Vagranfile
   * Vim
 * Contenerización (METAPAQUETE_DOCKER)
   * Docker (Instalación mediante script oficial)
+  * Docker Compose (Instalación mediante script oficial)
 * LAMP (METAPAQUETE_LAMP)
   * apache2
   * curl
