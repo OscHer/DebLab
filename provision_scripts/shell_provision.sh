@@ -23,7 +23,10 @@ function install_c
 function install_docker
 {
   echo "Instalando metapaquete docker"
-  
+  # Instalamos la versión edge mediante script de docker
+  curl -fsSL https://get.docker.com -o get-docker.sh
+  sh get-docker.sh
+  usermod -aG docker vagrant
 }
 
 function install_lamp
