@@ -41,8 +41,14 @@ function install_lamp
   echo "PECL additional packages:"
   pecl channel-update pecl.php.net # Subscribe to main PECL channel
   pecl install mcrypt
-  echo "extension=mcrypt.so" | sudo tee /etc/php/$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;")/mods-available/mcrypt.ini # List mcrypt as avilable module
-  [[ $(phpenmod mcrypt) -eq 0 && $(systemctl restart apache2) -eq 0 ]] && echo "mcrypt enabled" # Enable mcrypt module
+  echo "extension=mcrypt.so" | sudo tee /etc/php/$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;")/mods-available/mcrypt.ini > /dev/null # List mcrypt as avilable module
+  [[ $(phpenmod mcrypt) -eq 0 ]] && echo "mcrypt enabled" # Enable mcrypt module
+
+  [[ $(a2enmod rewrite | grep "Enabling" | wc -l) -gt 0 ]] && echo "Enabling apache mod_rewrite."
+  [[ $(rm -f /var/www/html/index.html) -eq 0 ]] && echo "Removing default apache index.html file"
+  echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/index.php > /dev/null && echo "Creating phpinfo file: http://localhost:8080"
+
+  [[ $(systemctl restart apache) -eq 0 ]] && echo "Restarting apache webserver"
 }
 
 function install_python
