@@ -48,7 +48,7 @@ function install_lamp
   [[ $(rm -f /var/www/html/index.html) -eq 0 ]] && echo "Removing default apache index.html file"
   echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/index.php > /dev/null && echo "Creating phpinfo file: http://localhost:8080"
 
-  [[ $(systemctl restart apache) -eq 0 ]] && echo "Restarting apache webserver"
+  [[ $(systemctl restart apache2) -eq 0 ]] && echo "Restarting apache webserver"
 }
 
 function install_python
