@@ -37,6 +37,10 @@ function install_lamp
 {
   echo "Instalando metapaquete LAMP: $1"
   apt-get -y install $1
+
+  echo "PECL additional packages:"
+  pecl channel-update pecl.php.net
+  pecl install mcrypt
 }
 
 function install_python
