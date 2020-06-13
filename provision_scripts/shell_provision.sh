@@ -39,8 +39,10 @@ function install_lamp
   apt-get -y install $1
 
   echo "PECL additional packages:"
-  pecl channel-update pecl.php.net
+  pecl channel-update pecl.php.net # Subscribe to main PECL channel
   pecl install mcrypt
+  echo "extension=mcrypt.so" | sudo tee /etc/php/$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;")/mods-available/mcrypt.ini # List mcrypt as avilable module
+  [[ $(phpenmod mcrypt) -eq 0 && $(systemctl restart apache2) -eq 0 ]] && echo "mcrypt enabled" # Enable mcrypt module
 }
 
 function install_python
