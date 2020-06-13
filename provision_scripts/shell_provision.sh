@@ -52,6 +52,6 @@ apt-get update
 
 [[ METAPAQUETE_BASE -eq 1 ]] && install_base "$CADENA_METAPAQUETE_BASE"
 [[ METAPAQUETE_C -eq 1 ]] && install_c "$CADENA_METAPAQUETE_C"
-[[ METAPAQUETE_PYTHON -eq 1 ]] && install_docker "$CADENA_METAPAQUETE_PYTHON"
+[[ METAPAQUETE_DOCKER -eq 1 ]] && install_docker "$CADENA_METAPAQUETE_PYTHON"
 [[ METAPAQUETE_LAMP -eq 1 ]] && install_lamp "$CADENA_METAPAQUETE_LAMP"
 [[ METAPAQUETE_PYTHON -eq 1 ]] && install_python "$CADENA_METAPAQUETE_PYTHON"
